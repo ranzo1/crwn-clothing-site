@@ -9,6 +9,11 @@
   margin: 0 7.5px 15px;
   overflow: hidden;
 
+  @media screen and (max-width: 800px) {
+    height: 200px;
+    width: 100vw;
+  }
+
   &:hover {
     cursor: pointer;
 
@@ -26,6 +31,10 @@
 
   &.large {
     height: 380px;
+
+    @media screen and (max-width: 800px) {
+      height: 200px;
+    }
   }
 
   &:first-child {
@@ -34,11 +43,6 @@
 
   &:last-child {
     margin-left: 7.5px;
-  }
-
-  @media screen and (max-width: 800px) {
-    height: 200px;
-    width: 100vw;
   }
 
   .background-image {

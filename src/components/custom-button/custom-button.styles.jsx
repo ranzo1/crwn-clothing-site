@@ -34,6 +34,10 @@ const googleSignInStyles = css`
   color: white;
   border:none;
 
+  @media screen and (max-width: 800px) {
+    margin: 0 10px;   
+}
+
   &:hover {
     background-color: #357ae8;
   }
@@ -62,4 +66,5 @@ export const CustomButtonContainer = styled.button`
   display: flex;
   justify-content: center;
   ${getButtonStyles}
+  
 `;

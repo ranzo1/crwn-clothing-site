@@ -6,8 +6,9 @@
   align-items: center;
   margin: 50px auto 0;
 
-  @media screen and (max-width:800px) {
+  @media screen and (max-width: 800px) {
     margin: 10px auto 0;
+    align-content: center;
   }
 
   .checkout-header {
@@ -17,17 +18,23 @@
     justify-content: space-between;
     border-bottom: 1px solid darkgrey;
 
-    @media screen and (max-width:800px) {
-      width: 100%;
-      text-align: center; 
+    @media screen and (max-width: 800px) {
+      width: 300px;
+      text-align: center;
+      padding: 5px 0;
     }
 
     .header-block {
       text-transform: capitalize;
       width: 23%;
 
+      @media screen and (max-width: 800px) {
+        width: 0%;
+      }
+
       &:last-child {
         width: 8%;
+
       }
     }
   }
@@ -37,9 +44,8 @@
     margin-left: auto;
     font-size: 36px;
 
-    @media screen and (max-width:800px) {
-    margin-top: 20px;
-    text-align: center;
+    @media screen and (max-width: 800px) {
+      margin-top: 20px;
     }
   }
 
@@ -54,11 +60,12 @@
     color: red;
 
     @media screen and (max-width: 800px) {
-      font-size: 20px;
+      font-size: 18px;
+      margin-top: 20px;
     }
   }
 
   @media screen and (max-width: 800px) {
     margin: 10px auto 0;
-}
+  }
 }
